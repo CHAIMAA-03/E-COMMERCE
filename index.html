@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>E-commerce - Prodotto</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+    
+</head>
+<body>
+<div class="sopra-header">
+    <a><img src="icone/camion-spedizione.png" alt="spedizione" width="18">SPESE SPEDIZIONI CALCOLATE AL CHECKOUT (€5-10)</a>·
+    <a><img src="icone/reso.png" alt="reso" width="18">RESO GRATUITO 30 GIORNI</a>·
+    <a><img src="icone/garanzia.png" alt="garanzia" width="18">2 ANNI DI GARANZIA</a>
+</div>
+<header>
+    <div class="header-interno">
+        <!-- LOGO -->
+        <img src="kronos.png" alt="logo" class="logo"/>
+        <!-- MENU -->
+        <nav>
+            <ul class="menu">
+                <li class="prodotti">
+                    <a href="#">PRODOTTI</a>
+                    <ul class="sottomenu">
+                        <li><a>Smartwatch</a></li>
+                        <li><a>Cinturini</a></li>
+                        <li><a>Accessori</a></li>
+                        <div class="diviso-menu"></div>
+                        <li><a href="#">Offerte</a></li>
+                    </ul>
+                </li>
+                <li class="icona"><img src="icone/support.png" alt=""/><a href="#">ASSISTENZA</a></li>
+                <li class="icona"><img src="icone/persona.png" alt=""/><a href="#">ACCEDI</a></li>
+                <li class="carrello"><img src="icone/shop.png" alt=""/></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<main>
+    <div class="container">
+        <!-- <img class="immagine" src="angolazioni_orologio/orologio.png" alt=""> -->
+        <div class="zoom-wrapper">
+        <div class="carosello">
+            <span class="sconto">-25%</span>
+            <!-- i pallini in memoria -->
+            <input type="radio" id="s1" name="slide" checked>   <!-- checked → solo sul primo. Significa: "al caricamento della pagina, questo è già selezionato". -->
+            <input type="radio" id="s2" name="slide">   <!-- name → "questi radio fanno parte dello stesso gruppo" -->
+            <input type="radio" id="s3" name="slide">
+            <input type="radio" id="s4" name="slide">
+            <input type="radio" id="s5" name="slide">
+            <input type="radio" id="s6" name="slide">
+            <input type="radio" id="s7" name="slide">
+
+            <!-- LA FRECCIA SINISTRA -->
+            <!-- Quando clicchi una <label>, il browser seleziona automaticamente l'<input> che ha lo stesso id indicato nel for.  -->
+            <!-- for="s3" → cliccando sulla frecca che c'è nel s4, ti porta nella s3 e così via.... Quindi il for dice torna in questa slide-->
+            <label class="freccia freccia-sx freccia-sx-2" for="s1">‹</label>
+            <label class="freccia freccia-sx freccia-sx-3" for="s2">‹</label>
+            <label class="freccia freccia-sx freccia-sx-4" for="s3">‹</label>
+            <label class="freccia freccia-sx freccia-sx-5" for="s4">‹</label>
+            <label class="freccia freccia-sx freccia-sx-6" for="s5">‹</label>
+            <label class="freccia freccia-sx freccia-sx-7" for="s6">‹</label>
+
+            <div class="slides">
+                <img src="angolazioni_orologio/orologio.png" alt="..." class="slide img-1">
+                <img src="angolazioni_orologio/chermo_notifiche.png" alt="..." class="slide img-2">
+                <img src="angolazioni_orologio/retro.png" alt="..." class="slide img-3">
+                <img src="angolazioni_orologio/side-view.png" alt="..." class="slide img-4">
+                <img src="angolazioni_orologio/orologio_scatola.png" alt="..." class="slide img-5">
+                <img src="angolazioni_orologio/person_running.png" alt="..." class="slide img-6">
+                <img src="angolazioni_orologio/person_working.png" alt="..." class="slide img-7">
+            </div>
+
+            <!-- LA FRECCIA DESTRA -->
+            <label class="freccia freccia-dx freccia-dx-1" for="s2">›</label>
+            <label class="freccia freccia-dx freccia-dx-2" for="s3">›</label>
+            <label class="freccia freccia-dx freccia-dx-3" for="s4">›</label> 
+            <label class="freccia freccia-dx freccia-dx-4" for="s5">›</label> 
+            <label class="freccia freccia-dx freccia-dx-5" for="s6">›</label> 
+            <label class="freccia freccia-dx freccia-dx-6" for="s7">›</label> 
+
+            <div class="pallini-carosello">
+                <!-- cliccnado sul pallino, si attiva il for, e ti porta in quella slide -->
+                <label for="s1"></label>
+                <label for="s2"></label>
+                <label for="s3"></label>
+                <label for="s4"></label>
+                <label for="s5"></label>
+                <label for="s6"></label>
+                <label for="s7"></label>
+            </div>
+        </div>
+        <div class="zoom-risultato"></div>
+        </div>
+        <div class="contenuto">
+            <h2>SmartWatch <i id="premium">Pro</i></h2>
+            <p class="stelle">
+                <span class="box-stelle">
+                    <img src="stelle/star-piena.png">
+                    <img src="stelle/star-piena.png">
+                    <img src="stelle/star-piena.png">
+                    <img src="stelle/star-piena.png">
+                    <img src="stelle/star.png">
+                </span>
+                <span class="media-stelle">4.2</span> · <a href="#recensioni" id="collegamento">4 recensioni</a>
+            </p>
+            <div class="prezzi">
+                <span class="prezzo€">€149,00</span>&nbsp;&nbsp;&nbsp;
+                <span class="barrato">€199,99</span><br>
+                <span class="iva">IVA inclusa</span>
+                <p class="totale"></p>
+            </div>
+            <br>
+            <span class="tempo">
+                <img src="icone/orologio.png" alt="scadenza">
+                Offerta a tempo limitato &nbsp;&nbsp;— <span id="countdown"></span>
+            </span>
+            <div class="divisore"></div>
+            <p id="colore">COLORE</p>
+            <div class="scelta-colori">
+
+                <div class="colore-info attivo" data-colore="grigio">
+                    <span class="pallino" style="background:#9999aa; border-color:#7c7871;"></span>
+                    <span class="colore-nome">Grigio</span>
+                </div>
+
+                <div class="colore-info" data-colore="nero">
+                    <span class="pallino" style="background:#2a2a2a; border-color:#111;"></span>
+                    <span class="colore-nome">Nero</span>
+                </div>
+
+                <div class="colore-info" data-colore="verde">
+                    <span class="pallino" style="background:#143c33; border-color:#2e5e3e;"></span>
+                    <span class="colore-nome">Verde</span>
+                    <span class="rimanenze">4 PEZZI RIMANENTI</span>
+                </div>
+
+            </div><br>
+            <div class="qnta">
+                <a id="nome">QUANTITA'</a>
+                <div id="nQnta">
+                    <button id="btnMeno">-</button>
+                    <span id="numero">1</span>
+                    <button id="btnPiu">+</button>
+                </div>
+            </div>
+            <div class="aggiungi">
+                <button class="box-carrello" classtype="submit"><img src="icone/shop.png" alt=""/>AGGIUNGI AL CARRELLO</button>
+                <a class="preferito"><img src="icone/heart.png" alt="preferito" width="30"></a>
+            </div>
+            <!-- <p class="spedizione">Spese spedizione: calcolate al checkout (circa €20-25)</p> -->
+        </div>
+    </div>
+    
+    <div class="contenuto-sotto">
+        <div class="descrizione">
+            <div class="nome-sezione">
+                <h2 class="titolo-sezione">Descrizione prodotto</h2>
+                <div class="linea"></div>
+            </div>
+            <div class="tendine-desc">
+                <details>
+                    <summary>
+                        <a><img src="icone/diamante.png" width="20">Design e materiali</a>
+                        <span>❯</span>
+                    </summary>
+                    <p>
+                        Lo SmartWave Pro è costruito con una cassa in alluminio aeronautico e cinturino in silicone premium. Il profilo sottile da 20 mm lo rende elegante in ogni situazione, dall'ufficio alla palestra.
+                        Il display AMOLED da 1.4" offre colori vividi e una luminosità fino a 2000 nit, leggibile anche in pieno sole. Il vetro zaffiro resistente ai graffi protegge lo schermo nel lungo periodo.
+                    </p>
+                </details>
+                <details>
+                    <summary>
+                        <a><img src="icone/ecg_heart.png" width="20">Salute e sport</a>
+                        <span>❯</span>
+                    </summary>
+                    <p>
+                        Sensori avanzati per monitorare frequenza cardiaca, saturazione dell'ossigeno, stress e qualità del sonno in tempo reale. I dati vengono raccolti in un'interfaccia chiara e intuitiva.
+                        Oltre 200 modalità sport: corsa, ciclismo, nuoto, yoga e molto altro. La resistenza 5 ATM (fino a 50 m) lo rende ideale anche in piscina.
+                    </p>
+                </details>
+                <details>
+                    <summary>
+                        <a><img src="icone/batteria.png" width="20">Batteria e connetività</a>
+                        <span>❯</span>
+                    </summary>
+                    <p>
+                        La batteria a lunga durata è uno dei suoi punti di forza: dura fino a 7 giorni di autonomia con una sola ricarica. Compatibile con iOS 14+ e Android 8+: sincronizza notifiche, chiamate, messaggi e app senza mai tirar fuori lo smartphone.
+                        Funzioni intelligenti: meteo, controllo musica, promemoria, timer, sveglie. B 5.3 per una connessione stabile e immediata.
+                    </p>
+                </details>
+                <details>
+                    <summary>
+                        <a><img src="icone/confezione.png" width="23">Nella confezione</a>
+                        <span>❯</span>
+                    </summary>
+                    <ul class="lista-confezione">
+                        <li>Smartwatch Pro</li>
+                        <li>Cavo di ricarica magnetico</li>
+                        <li>Cinturino in silicone (misura M/L)</li>
+                        <li>Manuale cartaceo multilingua</li>
+                        <li>Guida all'installazione</li>
+                    </ul>
+                </details>
+            </div>
+        </div>
+        <div class="tecniche">
+            <div class="nome-sezione">
+                <h2 class="titolo-sezione">Specifiche e Tecniche</h2>
+                <div class="linea"></div>
+            </div>
+            <div id="box-tecniche">
+                <div class="sezione-sopra">
+                <div class="spec-tec">
+                    <img src="icone/weight.png" class="icon-dettaglio">
+                    <div class="dettaglio">
+                        <a class="nome-dettaglio">PESO</a>
+                        <a class="specifiche">42 g</a>
+                    </div>
+                </div>
+                <div class="spec-tec">
+                    <img src="icone/materiale.png" class="icon-dettaglio">
+                    <div class="dettaglio">
+                        <a class="nome-dettaglio">MATERIALE</a>
+                        <a class="specifiche">Alluminio + silicone, vetro zaffiro</a>
+                    </div>
+                </div>
+                <div class="spec-tec">
+                    <img src="icone/misure.png" class="icon-dettaglio">
+                    <div class="dettaglio">
+                        <a class="nome-dettaglio">DIMENSIONI</a>
+                        <a class="specifiche">44 × 38 × 20 mm</a>
+                    </div>
+                </div>
+                <div class="spec-tec">
+                    <img src="icone/batteria.png" class="icon-dettaglio">
+                    <div class="dettaglio">
+                        <a class="nome-dettaglio">BATTERIA</a>
+                        <a class="specifiche">Fino a 7 giorni</a>
+                    </div>
+                </div>
+                </div>
+                <div class="sezione-sotto">
+                    <div class="spec-tec">
+                        <img src="icone/bluetooth.png" class="icon-dettaglio" width="24" height="24">
+                        <div class="dettaglio">
+                            <a class="nome-dettaglio">CONNESSIONE</a>
+                            <a class="specifiche">Bluetooth 5.3</a>
+                        </div>
+                    </div>
+                    <div class="spec-tec">
+                        <img src="icone/goccia.png" class="icon-dettaglio">
+                        <div class="dettaglio">
+                            <a class="nome-dettaglio">RESISTENZA ACQUA</a>
+                            <a class="specifiche">5 ATM (50 M)</a>
+                        </div>
+                    </div>
+                    <div class="spec-tec">
+                        <img src="icone/telefono.png" class="icon-dettaglio" width="24" height="24">
+                        <div class="dettaglio">
+                            <a class="nome-dettaglio">COMPATIBILITA'</a>
+                            <a class="specifiche">iOS 14+ / Android 8+</a>
+                        </div>
+                    </div>
+                    <div class="spec-tec">
+                        <img src="icone/manuale.png" class="icon-dettaglio">
+                        <div class="dettaglio">
+                            <a class="nome-dettaglio">MANUALE</a>
+                            <a class="specifiche">Cartaceo + PDF online</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="recensioni">
+            <div class="nome-sezione">
+                <h2 class="titolo-sezione">Recensioni clienti</h2>
+                <div class="linea"></div>
+            </div>
+            <div class="box-media">
+                <div class="num-stelle">
+                    <a id="numero-media">4.2</a>
+                    <span class="box-stelle">
+                        <img src="stelle/star-piena.png">
+                        <img src="stelle/star-piena.png">
+                        <img src="stelle/star-piena.png">
+                        <img src="stelle/star-piena.png">
+                        <img src="stelle/star.png">
+                    </span>
+                </div>
+                <div class="divisione"></div>
+                <div class="barre-recens">
+                    <div class="barra-riga" data-filtro="5">
+                        <span class="barra-numero">5&nbsp;&nbsp;stelle</span>
+                        <div class="barra-sfondo">
+                            <div class="barra-5"></div>
+                        </div>
+                    </div>
+                    <div class="barra-riga" data-filtro="4">
+                        <span class="barra-numero">4&nbsp;&nbsp;stelle</span>
+                        <div class="barra-sfondo">
+                            <div class="barra-4"></div>
+                        </div>
+                    </div>
+                    <div class="barra-riga" data-filtro="3">
+                        <span class="barra-numero">3&nbsp;&nbsp;stelle</span>
+                        <div class="barra-sfondo">
+                            <div class="barra-3"></div>
+                        </div>
+                    </div>
+                    <div class="barra-riga" data-filtro="2">
+                        <span class="barra-numero">2&nbsp;&nbsp;stelle</span>
+                        <div class="barra-sfondo">
+                        </div>
+                    </div>
+                    <div class="barra-riga" data-filtro="1">
+                        <span class="barra-numero">1&nbsp;&nbsp;stella</span>
+                        <div class="barra-sfondo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box-recensioni">
+                <div class="griglia-sopra">
+                    <div class="box-rece" data-stelle="5">
+                        <div class="parte-sopra">
+                            <div class="info-rece">
+                                <div class="utente">AV</div>
+                                <div class="nome-data">
+                                    <span class="nome-utente">Alexandro V.</span>
+                                    <a class="data-rece">15 novembre 2025</a>
+                                </div>
+                            </div>
+                            <span class="rece-stelle-5">
+                                <img src="stelle/star-piena.png" width="20">
+                                <img src="stelle/star-piena.png" width="20">
+                                <img src="stelle/star-piena.png" width="20">
+                                <img src="stelle/star-piena.png" width="20">
+                                <img src="stelle/star-piena.png" width="20">
+                            </span>
+                        </div>
+                        <div class="testo-rece">
+                            <p class="testo">Lo uso ogni giorno da due mesi, sia in ufficio che in palestra.<br>
+                                La batteria dura davvero una settimana e le notifiche arrivano sempre in tempo. 
+                            </p>
+                            <div class="acq-utile">
+                                <span class="acq-verif"><img src="icone/verificato.png">ACQUISTO VERIFICATO</span>
+                                <button class="utile">Utile</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-rece" data-stelle="4">
+                        <div class="parte-sopra">
+                            <div class="info-rece">
+                            <div class="utente">UA</div>
+                                <div class="nome-data">
+                                    <span class="nome-utente">Marco T.</span>
+                                    <a class="data-rece">3 febbraio 2026</a>
+                                </div>
+                            </div>
+                            <span class="rece-stelle-5">
+                                <img src="stelle/star-piena.png" width="20">
+                                <img src="stelle/star-piena.png" width="20">
+                                <img src="stelle/star-piena.png" width="20">
+                                <img src="stelle/star-piena.png" width="20">
+                                <img src="stelle/star.png" width="20">
+                            </span>
+                        </div>
+                        <div class="testo-rece" data-stelle="3">
+                            <p class="testo">Design elegante e materiali di qualità. Il monitoraggio del sonno è preciso e l'interfaccia è intuitiva. <br>
+                                Tolgo una stella perché il cinturino all'inizio è un po' rigido, ma con il tempo si ammorbidisce. 
+                            </p>
+                            <div class="acq-utile">
+                                <span class="acq-verif"><img src="icone/verificato.png">ACQUISTO VERIFICATO</span>
+                                <button class="utile">Utile</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="griglia-sotto">
+                    <div class="box-rece" data-stelle="4">
+                        <div class="parte-sopra">
+                            <div class="info-rece">
+                            <div class="utente">UA</div>
+                                <div class="nome-data">
+                                    <span class="nome-utente">Utente_Anonimo99</span>
+                                    <a class="data-rece">10 aprile 2026</a>
+                                </div>
+                            </div>
+                            <span class="rece-stelle-5">
+                                <img src="stelle/star-piena.png" width="20">
+                                <img src="stelle/star-piena.png" width="20">
+                                <img src="stelle/star-piena.png" width="20">
+                                <img src="stelle/star-piena.png" width="20">
+                                <img src="stelle/half-star.png" width="20">
+                            </span>
+                        </div>
+                        <div class="testo-rece">
+                            <p class="testo">ok. Bello, ho fatto in tempo a prenderlo in offerta</p>
+                            <div class="acq-utile">
+                                <span class="acq-verif"><img src="icone/verificato.png">ACQUISTO VERIFICATO</span>
+                                <button class="utile">Utile</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-rece" data-stelle="3">
+                        <div class="parte-sopra">
+                            <div class="info-rece">
+                            <div class="utente">SB</div>
+                                <div class="nome-data">
+                                    <span class="nome-utente">Sara B.</span>
+                                    <a class="data-rece">12 marzo 2026</a>
+                                </div>
+                            </div>
+                            <span class="rece-stelle-5">
+                                <img src="stelle/star-piena.png" width="20">
+                                <img src="stelle/star-piena.png" width="20">
+                                <img src="stelle/star-piena.png" width="20">
+                                <img src="stelle/half-star.png" width="20">
+                                <img src="stelle/star.png" width="20">
+                            </span>
+                        </div>
+                        <div class="testo-rece">
+                            <p class="testo">Carino. Ma dopo un mese il contapassi dà qualche valore strano e la sincronizzazione con il telefono a volte è lenta.</p>
+                            <div class="acq-utile">
+                                <span class="acq-verif"><img src="icone/verificato.png">ACQUISTO VERIFICATO</span>
+                                <button class="utile">Utile</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+            <!-- <button id="btnTutte">Mostra tutte</button>   -->
+    </div>
+</main>
+<footer>
+    <div class="parte-sopra">
+        <img src="kronos.png" alt="logo" width="380"/>
+        <div class="nome-info">
+            <a>ASSISTENZA</a>
+            <ul>
+                <li><img src="icone/mail.png" width="20" height="20">Contattaci</li>
+                <li><img src="icone/domanda.png" width="20" height="20">FAQ</li>
+                <li><img src="icone/rotate.png" width="20" height="20">Resi e rimborsi</li>
+                <li><img src="icone/spedizione.png" width="20" height="20">Info spedizioni</li>
+            </ul>
+        </div>
+        <div class="nome-info">
+            <a>INFORMAZIONI LEGALI</a>
+            <ul>
+                <li><img src="icone/lock.png" width="20" height="20">Privacy Policy</li>
+                <li><img src="icone/cookie.png" width="20" height="20">Cookie Policy</li>
+                <li><img src="icone/manuale.png" width="20" height="20">Termini e Condizioni</li>
+                <li><img src="icone/bilancia.png" width="20" height="20">GDPR</li>
+            </ul>
+        </div>
+        
+        <div class="info-pag">
+            <a>SEGUICI</a>
+            <ul>
+                <li><img src="icone/instagram.png" width="28" height="28"></li>
+                <li><img src="icone/facebook.png" width="28" height="28"></li>
+                <li><img src="icone/twitter.png" width="28" height="28"></li>
+                <li><img src="icone/youtube.png" width="28" height="28"></li>
+            </ul>
+            <a id="pagamenti">PAGAMENTI ACCETTATI</a>
+            <div id="icone-pag">
+                <img src="icone/visa.png" width="55" height="auto">
+                <img src="icone/mastercard.png" width="55" height="auto">
+                <img src="icone/paypal.png" width="50" height="45" style="border-radius: 5px;">
+                <img src="icone/apple-pay.png" width="55" height="auto">
+            </div>
+        </div>
+    </div>
+    <div class="diviso"></div>
+    <p id="copyright">&copy;&nbsp;2026 KRONUS — Tutti i diritti riservati — P.IVA 12345678901</p>
+</footer>
+
+<div class="aggiungi-sticky">
+    <div class="aggiungi-sinistra">
+        <span class="aggiungi-nome">SmartWatch Premium — Edizione 2025</span>
+        <div class="aggiungi-riga-prezzi">
+            <span class="aggiungi-badge">-25%</span>
+            <span class="aggiungi-prezzo">€149,00</span>
+            <span class="aggiungi-barrato">€199,99</span>
+        </div>
+    </div>
+    <button class="aggiungi-btn">
+        <img src="icone/shop.png" alt=""> AGGIUNGI AL CARRELLO
+    </button>
+</div>
+
+<div class="toast" id="toast">
+    <img src="icone/verificato.png" width="20">
+    <div class="toast-testo">
+        <span class="toast-titolo">Aggiunto al carrello!</span>
+        <span class="toast-desc">SmartWatch Pro — €149,00</span>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
