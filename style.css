@@ -549,6 +549,9 @@ max-width: 1350px;
     cursor: pointer; 
 }
 
+.preferito.attivo img {
+    filter: brightness(0) invert(35%) sepia(80%) saturate(500%) hue-rotate(320deg);
+}
 
 /* DESCRIZIONE */
 .contenuto-sotto {
