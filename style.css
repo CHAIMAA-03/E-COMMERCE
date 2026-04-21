@@ -1178,12 +1178,12 @@ footer .parte-sopra {
 
 @media (max-width: 1400px) {
     body {
-        zoom: 70%;
+        zoom: 50%;
     }
 }
 
 @media (max-width: 1280px) {
     body {
-        zoom: 70%;
+        zoom: 50%;
     }
 }
