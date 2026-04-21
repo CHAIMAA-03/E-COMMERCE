@@ -155,14 +155,14 @@ function cambiaImmagini(colore) {
             'angolaz_orol_black/person_running_nero.jpg',
             'angolaz_orol_black/person_working_nero.jpg'
         ],
-        verde: [
-            'angolaz_orol_verde/orologio_verde.jpg',
-            'angolaz_orol_verde/chermo_notifiche_verde.jpg',
-            'angolaz_orol_verde/retro_verde.jpg',
-            'angolaz_orol_verde/side-view_verde.jpg',
-            'angolaz_orol_verde/orologio_scatola_verde.png',
-            'angolaz_orol_verde/person_running_verde.jpg',
-            'angolaz_orol_verde/person_working_verde.jpg'
+        rosa: [
+            'angolaz_orol_rosa/orologio_rosa.jpg',
+            'angolaz_orol_rosa/chermo_notifiche_rosa.png',
+            'angolaz_orol_rosa/retro_rosa.jpg',
+            'angolaz_orol_rosa/side-view_rosa.jpg',
+            'angolaz_orol_rosa/orologio_scatola_rosa.png',
+            'angolaz_orol_rosa/person_running_rosa.png',
+            'angolaz_orol_rosa/person_working_rosa.jpg'
         ]
     }
 
