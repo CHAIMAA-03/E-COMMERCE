@@ -510,7 +510,7 @@ max-width: 1350px;
     border-radius: 10px;
     color: white;
     font-weight: 600;
-    margin: 30px px;
+    margin: 30px 0px;
     padding: 15px 0px;
     display: flex;
     align-items: center;
@@ -531,7 +531,7 @@ max-width: 1350px;
     background-color: white;
     border: 1px solid #9999aa;
     border-radius: 12px;
-    padding: 10px 20px;
+    padding: 9px 18px;
 }
 
 .aggiungi .preferito:hover img{
@@ -556,7 +556,7 @@ max-width: 1350px;
     flex-direction: column; 
     justify-content: center; 
     align-items: center;
-    gap: 60pxpx;
+    gap: 60px;
     animation: scivola-su 0.8s ease forwards;
 }
 

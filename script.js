@@ -7,8 +7,16 @@ const prezzoBase = 149.00
 let quantita = 1
 
 btnPiu.addEventListener("click", function(){
-    quantita++
-    aggiornaQnta()
+    // controlla qual è il colore attivo in quel momento
+    const coloreAttivo = document.querySelector('.colore-info.attivo')
+    const nomeColore = coloreAttivo.getAttribute('data-colore')
+
+    const limiteMax = (nomeColore === 'rosa') ? 4 : 99
+
+    if (quantita < limiteMax) {
+        quantita++
+        aggiornaQnta()
+    }
 })
 
 btnMeno.addEventListener("click", function(){
@@ -176,6 +184,8 @@ function cambiaImmagini(colore) {
 
     // Torna sempre alla prima slide quando cambi colore
     document.querySelector('#s1').checked = true
+    quantita = 1
+    aggiornaQnta()
 }
 
 
@@ -271,14 +281,10 @@ document.querySelector('.aggiungi-btn').addEventListener('click', function() {
 const btnPreferito = document.querySelector('.preferito')
 const imgCuore = btnPreferito.querySelector('img')
 
-let preferito = false   // falso = cuore vuoto, vero = cuore pieno
-
 btnPreferito.addEventListener('click', function() {
-    if (preferito === false) {
-        imgCuore.src = 'icone/heart-pieno.png'   // ← metti il nome esatto del tuo file
-        preferito = true
+    if (imgCuore.src.includes('heart-pieno.png')) {
+        imgCuore.src = 'icone/heart.png'        // torna al cuore vuoto
     } else {
-        imgCuore.src = 'icone/heart.png'
-        preferito = false
+        imgCuore.src = 'icone/heart-pieno.png'  // diventa cuore pieno rosso
     }
 })
