@@ -265,15 +265,3 @@ document.querySelector('.aggiungi-btn').addEventListener('click', function() {
     toast.style.bottom = '100px'
     mostraToast()
 })
-
-// CUORE PREFERITI
-const btnPreferito = document.querySelector('.preferito')
-const imgCuore = btnPreferito.querySelector('img')
-
-btnPreferito.addEventListener('click', function() {
-    if (imgCuore.src.includes('heart-pieno.png')) {
-        imgCuore.src = 'icone/heart.png'        // torna al cuore vuoto
-    } else {
-        imgCuore.src = 'icone/heart-pieno.png'  // diventa cuore pieno rosso
-    }
-})
