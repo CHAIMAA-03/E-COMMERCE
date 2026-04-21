@@ -265,11 +265,3 @@ document.querySelector('.aggiungi-btn').addEventListener('click', function() {
     toast.style.bottom = '100px'
     mostraToast()
 })
-
-
-// CUORE PREFERITI
-const btnPreferito = document.querySelector('.preferito')
-
-btnPreferito.addEventListener('click', function() {
-    btnPreferito.classList.toggle('attivo')
-})
